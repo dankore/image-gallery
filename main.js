@@ -12,10 +12,11 @@
       }
     }
     
+    // Refresh page upon button click
     const refreshButton = document.querySelector(".refresh-button")
     refreshButton.addEventListener("click", refreshPage)
     
     function refreshPage() {
-      refreshButton.location.replace("https://images-from-nigeria.netlify.com/")
+      location.reload()
     }
   
