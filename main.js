@@ -11,4 +11,11 @@
         this.classList.toggle('open-active')
       }
     }
+    
+    const refreshButton = document.querySelector(".refresh-button")
+    refreshButton.addEventListener("click", refreshPage)
+    
+    function refreshPage() {
+      refreshButton.location.replace("https://images-from-nigeria.netlify.com/")
+    }
   
